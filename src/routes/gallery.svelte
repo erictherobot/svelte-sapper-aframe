@@ -5,29 +5,17 @@
 <a-scene>
   <a-assets>
     <img
-      id="city"
+      id="room2"
       crossorigin="anonymous"
       src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg" />
-    <img
-      id="city-thumb"
-      crossorigin="anonymous"
-      src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg" />
-    <img
-      id="cubes-thumb"
-      crossorigin="anonymous"
-      src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg" />
-    <img
-      id="sechelt-thumb"
-      crossorigin="anonymous"
-      src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg" />
+    <img id="room2-thumb" crossorigin="anonymous" src="/sticky.png" />
+    <img id="cubes-thumb" crossorigin="anonymous" src="/sticky.png" />
+    <img id="sechelt-thumb" crossorigin="anonymous" src="/sticky.png" />
     <audio
       id="click-sound"
       crossorigin="anonymous"
       src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg" />
-    <img
-      id="cubes"
-      crossorigin="anonymous"
-      src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg" />
+    <img id="cubes" crossorigin="anonymous" src="/brick.jpg" />
     <img
       id="sechelt"
       crossorigin="anonymous"
@@ -51,7 +39,7 @@
   <a-sky
     id="image-360"
     radius="10"
-    src="#city"
+    src="#room2"
     animation__fade="property: components.material.material.color; type: color;
     from: #FFF; to: #000; dur: 300; startEvents: fade"
     animation__fadeback="property: components.material.material.color; type:
@@ -63,7 +51,10 @@
       template="src: #link"
       data-src="#cubes"
       data-thumb="#cubes-thumb" />
-    <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb" />
+    <a-entity
+      template="src: #link"
+      data-src="#room2"
+      data-thumb="#room2-thumb" />
     <a-entity
       template="src: #link"
       data-src="#sechelt"
