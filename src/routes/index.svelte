@@ -2,20 +2,19 @@
   <title>Aframe Example</title>
 </svelte:head>
 
-<a-scene background="color: #ECECEC;">
-  <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow />
-  <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow />
-  <a-cylinder
-    position="1 0.75 -3"
-    radius="0.5"
-    height="1.5"
-    color="#FFC65D"
-    shadow />
-  <a-plane
-    position="0 0 -4"
-    rotation="-90 0 0"
-    width="4"
-    height="4"
-    color="#7BC8A4"
-    shadow />
+<a-scene>
+  <a-assets>
+    <img
+      id="boxTexture"
+      src="https://ericdavidsmith.com/ericdavidsmith.png"
+      alt="Eric David Smith" />
+    <img
+      id="skyTexture"
+      src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2553&q=80"
+      alt="The Beach" />
+  </a-assets>
+
+  <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2" />
+
+  <a-sky src="#skyTexture" />
 </a-scene>
