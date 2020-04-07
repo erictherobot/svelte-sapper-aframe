@@ -17,6 +17,7 @@ const onwarn = (warning, onwarn) =>
   onwarn(warning)
 
 export default {
+  useStrict: false, // a-frame 0.5 not 'strict' compatible
   client: {
     input: config.client.input(),
     output: config.client.output(),

@@ -3,6 +3,25 @@
 </svelte:head>
 
 <a-scene>
+  <a-box dragndrop position="-2 0.5 -3" rotation="0 45 0" color="#ff0" shadow>
+    <a-entity
+      template="src: #link"
+      data-src="#cubes"
+      data-thumb="#cubes-thumb"
+      geometry="primitive: plane; width: 2.8; height: auto"
+      material="color: blue"
+      text="value: Mike's big idea" />
+  </a-box>
+
+  <a-box dragndrop position="0 0 -3" rotation="0 45 0" color="#ff0">
+    <a-entity
+      template="src: #link"
+      data-src="#room2"
+      data-thumb="#room2-thumb"
+      geometry="primitive: plane; width: 2.8; height: auto"
+      material="color: blue"
+      text="value: Jane's big idea" />
+  </a-box>
   <a-assets>
     <img
       id="room2"
@@ -46,7 +65,7 @@
     color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade" />
 
   <!-- Image links. -->
-  <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
+  <!-- <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
     <a-entity
       template="src: #link"
       data-src="#cubes"
@@ -59,7 +78,7 @@
       template="src: #link"
       data-src="#sechelt"
       data-thumb="#sechelt-thumb" />
-  </a-entity>
+  </a-entity> -->
 
   <!-- Camera + cursor. -->
   <a-entity id="camera" camera look-controls>
