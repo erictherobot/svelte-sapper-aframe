@@ -10,7 +10,7 @@
       alt="Eric David Smith" />
     <img
       id="skyTexture"
-      src="https://images.unsplash.com/photo-1460411794035-42aac080490a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+      src="https://images.squarespace-cdn.com/content/v1/5568ec94e4b06c17240d5220/1443508568279-5KM5IBNCU4HDIQGMTCC3/ke17ZwdGBToddI8pDm48kBpzt4_K496Ao-aLooMTCTp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0plef_PmwB6-3GP4qDbCUv9cfxFbOETjyuzxeVcrr-Ci5fj66QIwtSm7rXFpMnU6ig/Homepage+LEI.jpg?format=2500w"
       alt="The Beach" />
   </a-assets>
   <a-box

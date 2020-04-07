@@ -58,12 +58,19 @@
   <ul>
     <li>
       <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-        home
+        Home
       </a>
     </li>
     <!-- <li>
       <a aria-current={segment === 'about' ? 'page' : undefined} href="about">
         about
+      </a>
+    </li> -->
+    <!-- <li>
+      <a
+        aria-current={segment === 'gallery' ? 'page' : undefined}
+        href="gallery">
+        Gallery
       </a>
     </li> -->
     <li>
